@@ -2,7 +2,7 @@
 Application providing basic Machine information (CPU, Motherboard, memory, OS, IP)
 Note: Currently works on GNU/Linux only 
 
-## Howto build & run (on Linux)
+## Howto build & run (on Linux-x64)
 Prerequisites: node.js
 NPM prerequisites: electron-prebuilt, gulp
 
@@ -15,5 +15,5 @@ sh build-linux.sh
 
 Execute
 ```
-src/machine-linux-s64/machine
+src/machine-linux-x64/machine
 ```
