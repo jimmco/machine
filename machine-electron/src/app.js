@@ -20,5 +20,6 @@ app.on('ready', function() {
     });
 
     // Connect to server process
-    client.create(mainWindow); 
+    var devel = undefined;
+    if (devel != undefined) client.create(mainWindow); 
 });
