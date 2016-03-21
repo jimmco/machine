@@ -15,6 +15,5 @@ sh build-linux.sh
 
 Execute
 ```
-cd machine/machine-electron/src/machine-linux-s64
-./machine
+src/machine-linux-s64/machine
 ```
