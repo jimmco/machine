@@ -8,8 +8,7 @@ NPM prerequisites: electron-prebuilt, gulp
 
 Build
 ```
-git clone
-https://github.com/jimmco/machine.git
+git clone https://github.com/jimmco/machine.git
 cd machine/machine-electron
 sh build-linux.sh
 ```
