@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Machine info</title>
+    </head>
+<body>
+
+<div class="header">
+    <div class="row">
+        <div class="col-6"><h1>Machine info</h1></div>
+        <!-- <div class="col-6"><img class="img" src="img/mb_bw.png" /></div> -->
+    </div>        
+</div>
+    
+    <div class="emptyrow"></div>
+    <div class="row">        
+        <!-- CPU -->
+        <div class="col-3 ">CPU:</div>
+        <div id="cpu" class="col-9">loading...</div>
+    </div>
+    <div class="row">        
+        <!-- Motherboard -->
+        <div class="col-3">Motherboard:</div>
+        <div id="mb" class="col-9">loading...</div>        
+    </div>
+    <div class="row">                
+        <!-- OS -->
+        <div class="col-3">Memory:</div>
+        <div id="total_memory" class="col-9">loading...</div>                
+    </div>    
+    <div class="row">                
+        <!-- OS -->
+        <div class="col-3">OS:</div>
+        <div id="os" class="col-9">loading...</div>                
+    </div>
+    <div class="row">                
+        <!-- IP -->
+        <div class="col-3">Public IP:</div>
+        <div id="public_ip" class="col-9">loading...</div>                        
+    </div>
+    <div class="row">                
+        <!-- IP -->
+        <div class="col-3">Private IP:</div>
+        <div id="private_ip" class="col-9">loading...</div>                        
+    </div>
+    
+<!-- scripts -->    
+<!-- Connect to server process -->    
+<!-- build:remove -->
+<script>require('electron-connect').client.create()</script>
+<!-- end:build -->
+<script src="machine.js"></script>
+</body>
+</html>
