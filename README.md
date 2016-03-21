@@ -1,5 +1,5 @@
-# Machine info
-Application providing basic machine information (CPU, Motherboard, memory, OS, IP)
+# Machine
+Application providing basic Machine information (CPU, Motherboard, memory, OS, IP)
 Note: Currently works on GNU/Linux only
 
 ## Howto run
