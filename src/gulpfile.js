@@ -1,19 +1,18 @@
 'use strict';
 
 var gulp = require('gulp');
-var electron_connect = require('electron-connect').server.create();
-var electron = require('gulp-atom-electron');
+var electron = require('electron-connect').server.create();
 
 gulp.task('serve', function () {
 
   // Start browser process
-  electron_connect.start();
+  electron.start();
 
   // Restart browser process
-  gulp.watch('app.js', electron_connect.restart);
+  gulp.watch('app.js', electron.restart);
 
   // Reload renderer process
-  gulp.watch(['index.js', 'index.html','machine.js','index.css'], electron.reload);
+  gulp.watch(['index.html','machine.js','index.css'], electron.reload);
 });
 
 
